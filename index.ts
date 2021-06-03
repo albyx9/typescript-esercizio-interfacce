@@ -30,10 +30,10 @@ class animaliFantastici implements mago, animale{
     this.quantity = 2;
 
   }
-  set col(col){
+  set col(col){   //col è un accessorio setter, imposta la prop di color
     this.color = col
   }
-  get af(){
+  get af(){  //accessorio getter, ottiene le due prop
     return this.name0 + " e " + this.name1;
   }
 }
