@@ -27,19 +27,19 @@ class animaliFantastici implements mago, animale{
     this.ability = "Trasfigurazione";
     this.age = 27;
     this.name1 = "snaso";
-    this.color = "nero";
     this.quantity = 2;
 
+  }
+  set col(col){
+    this.color = col
   }
   get af(){
     return this.name0 + " e " + this.name1;
   }
 }
+animaliFantastici.col = "nero";
 
 var fantasia = new animaliFantastici;
 console.log("getter  --->", fantasia.af );
+console.log("setter  --->", animaliFantastici.col );
 
-/*
-for (let n = 0; n < 6; n++){
-  A[n] = fantasia;
-}*/
